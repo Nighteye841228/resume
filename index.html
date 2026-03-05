@@ -5,21 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>李旭恩 - 軟體工程師履歷</title>
+    <style>
+        /* 手機版響應式排版設定 */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px !important;
+            }
+
+            .resume-container {
+                padding: 30px 20px !important;
+            }
+
+            .header-flex {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 15px;
+            }
+
+            .header-info {
+                text-align: left !important;
+            }
+
+            .job-header {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 5px;
+            }
+
+            .job-date {
+                align-self: flex-start !important;
+            }
+
+            .bottom-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
 </head>
 
 <body
     style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #334155; background-color: #f8fafc; margin: 0; padding: 40px 20px;">
 
-    <div
+    <div class="resume-container"
         style="max-width: 850px; margin: 0 auto; background-color: #ffffff; padding: 50px 60px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.01); border-radius: 16px;">
 
-        <header
+        <header class="header-flex"
             style="display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid #f1f5f9; padding-bottom: 25px; margin-bottom: 35px;">
             <div>
                 <h1 style="margin: 0; color: #0f172a; font-size: 2.8em; font-weight: 800; letter-spacing: 2px;">李旭恩</h1>
                 <p style="margin: 8px 0 0 0; color: #3b82f6; font-size: 1.2em; font-weight: 600;">軟體工程師</p>
             </div>
-            <div style="text-align: right; color: #64748b; font-size: 0.95em;">
+            <div class="header-info" style="text-align: right; color: #64748b; font-size: 0.95em;">
                 <p style="margin: 0 0 5px 0;">📧 victor70412@gmail.com</p>
                 <p style="margin: 0;">📍 Taiwan</p>
             </div>
@@ -30,7 +66,7 @@
                 CSS framework、後端框架 Laravel PHP framework、對伺服器架設與資料庫管理有實務經驗，有 AI code 協作經驗。</p>
             <div
                 style="background-color: #f0fdf4; border-left: 4px solid #22c55e; padding: 15px 20px; border-radius: 0 8px 8px 0; color: #166534;">
-                <p style="margin: 0; line-height: 1.7;">「我有大概七年的寫作經驗，在這個工程師越來越遠離程式碼實作的潮流下，正確的傳達指令讓
+                <p style="margin: 0; font-style: italic; line-height: 1.7;">「我有大概七年的寫作經驗，在這個工程師越來越遠離程式碼實作的潮流下，正確的傳達指令讓
                     AI 可以產出正確、無幻覺、精簡的程式碼，我認為才是未來需要的技能，而寫作本身就是了解讀者、修改內容、力求每一個字都能發揮效果的手藝，我認為善於寫作這件事，能協助我在未來更快的與 AI
                     協作，使新產品開發更有效率。」</p>
             </div>
@@ -42,20 +78,22 @@
                 工作經歷</h2>
 
             <div style="margin-bottom: 30px;">
-                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
+                <div class="job-header"
+                    style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
                     <h3 style="margin: 0; color: #1e293b; font-size: 1.2em;">後端研發工程師 <span
                             style="color: #94a3b8; font-weight: 400; font-size: 0.9em;">| 聯瞻資訊股份有限公司</span></h3>
-                    <span
+                    <span class="job-date"
                         style="background-color: #f1f5f9; color: #475569; padding: 4px 10px; border-radius: 6px; font-size: 0.85em; font-weight: 600;">2022
                         - 2024</span>
                 </div>
             </div>
 
             <div style="margin-bottom: 30px;">
-                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
+                <div class="job-header"
+                    style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
                     <h3 style="margin: 0; color: #1e293b; font-size: 1.2em;">研發工程師 (研發替代役) <span
                             style="color: #94a3b8; font-weight: 400; font-size: 0.9em;">| 台大數位人文中心</span></h3>
-                    <span
+                    <span class="job-date"
                         style="background-color: #f1f5f9; color: #475569; padding: 4px 10px; border-radius: 6px; font-size: 0.85em; font-weight: 600;">2022.02
                         - 2022.11</span>
                 </div>
@@ -69,10 +107,11 @@
             </div>
 
             <div style="margin-bottom: 20px;">
-                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
+                <div class="job-header"
+                    style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
                     <h3 style="margin: 0; color: #1e293b; font-size: 1.2em;">實習工程師 <span
                             style="color: #94a3b8; font-weight: 400; font-size: 0.9em;">| 藍星球資訊</span></h3>
-                    <span
+                    <span class="job-date"
                         style="background-color: #f1f5f9; color: #475569; padding: 4px 10px; border-radius: 6px; font-size: 0.85em; font-weight: 600;">2020
                         上半</span>
                 </div>
@@ -96,8 +135,8 @@
                     <h3 style="margin: 0 0 10px 0; color: #2563eb; font-size: 1.2em;">廈門大學民間契約資料庫系統</h3>
                     <p style="margin: 0 0 15px 0; color: #475569; font-size: 0.95em;">
                         提供研究者於前台檢索資料，檢視資料內容、圖片，匯出檢索資料等功能，並實作後台系統提供管理者登入、上傳資料等。</p>
-                    <img src="截圖 2026-02-27 01.06.28.png" alt="廈門大學民間契約資料庫系統展示"
-                        style="width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);">
+                    <img src="截圖 2026-02-27 01.06.28.jpg" alt="廈門大學民間契約資料庫系統展示"
+                        style="width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); box-sizing: border-box;">
                 </div>
 
                 <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 12px;">
@@ -105,7 +144,7 @@
                     <p style="margin: 0 0 15px 0; color: #475569; font-size: 0.95em;">
                         提供使用者新增待辦事項，標記是否完成、並提供簡單分類與編輯功能，最後提供備份與導出功能讓使用者能產生每月進度完成表。</p>
                     <img src="截圖 2026-02-27 01.06.12.png" alt="Simple Todo-list Calendar 展示"
-                        style="width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);">
+                        style="width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); box-sizing: border-box;">
                 </div>
 
                 <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 12px;">
@@ -113,13 +152,14 @@
                     <p style="margin: 0 0 15px 0; color: #475569; font-size: 0.95em;">使用維基文庫提估的
                         API，提供使用者檢索與下載維基文庫的資料，並實作流程介面方便使用者導出與進一步利用資料，提供個人化的標註資料方法。</p>
                     <img src="截圖 2026-02-27 01.05.58.png" alt="維基文庫介接工具展示"
-                        style="width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);">
+                        style="width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); box-sizing: border-box;">
                 </div>
 
             </div>
         </section>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+        <div class="bottom-grid"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
 
             <section>
                 <h2
@@ -166,17 +206,17 @@
                     <li style="margin-bottom: 10px; display: flex; align-items: center;">
                         <span
                             style="display: inline-block; width: 8px; height: 8px; background-color: #3b82f6; border-radius: 50%; margin-right: 10px;"></span>
-                        <strong>英文</strong>&nbsp;- TOEFL ITP 銀質證書
+                        <strong>英文</strong>&nbsp;- TOEFL ITP 620 銀質證書
                     </li>
                     <li style="margin-bottom: 10px; display: flex; align-items: center;">
                         <span
                             style="display: inline-block; width: 8px; height: 8px; background-color: #94a3b8; border-radius: 50%; margin-right: 10px;"></span>
-                        <strong>日文</strong>&nbsp;- 一般讀寫
+                        <strong>日文</strong>&nbsp;- 初階
                     </li>
                     <li style="margin-bottom: 10px; display: flex; align-items: center;">
                         <span
                             style="display: inline-block; width: 8px; height: 8px; background-color: #94a3b8; border-radius: 50%; margin-right: 10px;"></span>
-                        <strong>台語</strong>&nbsp;- 普通說聽
+                        <strong>台語</strong>&nbsp;- 普通說、聽
                     </li>
                 </ul>
             </section>
